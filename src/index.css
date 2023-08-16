@@ -1,0 +1,30 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #F4D6BE;
+    border: 5px solid #eab187;
+    border-radius: 10px 20px;
+
+}
+
+.card-btn {
+    padding: 0px;
+    border: none;
+    margin: 5px;
+    background-color: transparent;
+
+}
+
+.card-btn:hover {
+    opacity: 0.8;
+    cursor: grab;
+    transform: scale(1.05);
+}

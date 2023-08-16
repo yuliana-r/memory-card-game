@@ -1,4 +1,9 @@
+import CardGrid from './components/CardGrid'
+import './index.css';
+
 export default function App() {
-  return('Hello world');
+  return(<>
+    <CardGrid />
+  </>)
 }
 
