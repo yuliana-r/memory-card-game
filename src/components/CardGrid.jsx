@@ -27,90 +27,112 @@ import '../index.css';
 export default function CardGrid() {
   const cards = [
     {
+      id: 0,
       image: BackCat,
       desc: 'Cat facing away showing its back'
     },
     {
+      id: 1,
       image: SideCat,
       desc: 'Cat depicted in profile'
     },
     {
+      id: 2,
       image: RollingCat,
       desc: 'Cat rolling on its back'
     },
     {
+      id: 3,
       image: JumpyCat,
       desc: 'Jumping cat being chased by another cat'
     },
     {
+      id: 4,
       image: LandingCat,
       desc: 'Cat landing facing forward'
     },
     {
+      id: 5,
       image: CuriousCat,
       desc: 'Cat curiously looking at you'
     },
     {
+      id: 6,
       image: WalkingCat,
       desc: 'Cat walking to the left while looking at you'
     },
     {
+      id: 7,
       image: FishCat,
       desc: 'Cat with yellow fish in its mouth'
     },
     {
+      id: 8,
       image: RunningCat,
       desc: 'Cat depicted in profile running to the right'
     },
     {
+      id: 9,
       image: FlyCat,
       desc: 'Cat depicted catching a  fly'
     },
     {
+      id: 10,
       image: SillyCat,
       desc: 'Cat depicted standing on its back legs'
     },
     {
+      id: 11,
       image: MeerCat,
       desc: 'Cat depicted sitting on its bum like a meerkat'
     },
     {
+      id: 12,
       image: StretchyCat,
       desc: 'Cat depicted stretching with its bottom up'
     },
     {
+      id: 13,
       image: LazyCat,
       desc: 'Lazy cat laying down'
     },
     {
+      id: 14,
       image: TailCat,
       desc: 'Cat depicted with its tail coming from above'
     },
     {
+      id: 15,
       image: SplitCat,
       desc: 'Cat depicted leaving the top left corner and entering the bottom right cotner'
     },
     {
+      id: 16,
       image: TripleCat,
       desc: 'Cat head depicted in 3 different sizes'
     },
     {
+      id: 17,
       image: MissionCat,
       desc: 'Cat depicted walking determined to the left'
     },
     {
+      id: 18,
       image: YarnCat,
       desc: 'Cat depicted playing with a yellow ball of yarn'
     },
     {
+      id: 19,
       image: DoubleCat,
       desc: 'Whimsical illustration of conjoined upper cat halves'
     },
     {
+      id: 20,
       image: CatOnTailCat,
       desc: 'Curious cat gazing at its tail\'s end shaped like a mini cat head'
     },
     {
+      id: 21,
       image: ReverseFishCat,
       desc: 'Yellow cat with black and white fish in its mouth'
     }
@@ -121,7 +143,7 @@ export default function CardGrid() {
   return(
     <div className="cards" >
       {cards.map(card => {
-        return  <Card key={card.desc} image={card.image} desc={card.desc} />
+        return  <Card key={card.id} image={card.image} desc={card.desc} />
       })}
     </div>
   )
