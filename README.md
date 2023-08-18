@@ -11,3 +11,5 @@
 
 2. Freepik (macrovector): https://www.freepik.com/free-vector/cats-character-set-with-isolated-images-similar-black-white-kitten-pet-different-poses-vector-illustration_26763548.htm 
 > Craftfully edited by [Mao](https://github.com/MaoShizhong).
+
+3. Wallpaper Access: https://wallpaperaccess.com/simple-aesthetic-pattern#203019 
