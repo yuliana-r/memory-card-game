@@ -22,7 +22,7 @@ import YarnCat from '../assets/images/charlie-cat-19.png'
 import DoubleCat from '../assets/images/charlie-cat-20.png'
 import CatOnTailCat from '../assets/images/charlie-cat-21.png'
 import ReverseFishCat from '../assets/images/charlie-cat-22.png'
-import '../index.css';
+import '../styles/index.css';
 
 export default function CardGrid() {
   const cards = [
