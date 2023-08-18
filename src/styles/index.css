@@ -1,5 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    background: url('../assets/images/background.jpg');
+    background-color: #e9e9e9;
+    height: 100vh;
+}
+
+header {
+    background-color: #f48b84;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.instructions {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'CatFont';
+    src: url('../assets/fonts/KattoPersonalUseOutline-0Wz3r.otf') format('opentype');
+}
+
+.logo {
+    font-family: 'CatFont';
+    font-size: 4em;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.desc {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
 }
 
 .cards {
@@ -8,23 +69,24 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    gap: 1em;
 }
 
 .card {
     width: 150px;
     height: 150px;
-    background-color: #F4D6BE;
-    border: 5px solid #eab187;
-    border-radius: 10px 20px;
-
+    background-color: #b8b8b8;
+    border: 2px solid #5c5c5c;
+    border-radius: 20px 10px;
 }
+
 
 .card-btn {
     padding: 0px;
     border: none;
     margin: 5px;
     background-color: transparent;
-
 }
 
 .card-btn:hover {

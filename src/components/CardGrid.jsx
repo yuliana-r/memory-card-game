@@ -141,10 +141,13 @@ export default function CardGrid() {
   
 
   return(
-    <div className="cards" >
-      {cards.map(card => {
-        return  <Card key={card.id} image={card.image} desc={card.desc} />
-      })}
-    </div>
+    <main>
+      <div className="cards" >
+        {cards.map(card => {
+          return  <Card key={card.id} image={card.image} desc={card.desc} />
+        })}
+      </div>
+    </main>
+    
   )
 }
