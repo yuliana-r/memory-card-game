@@ -1,4 +1,5 @@
 import Card from './Card'
+import Info from './Info';
 
 import BackCat from '../assets/images/charlie-cat-1.png';
 import SideCat from '../assets/images/charlie-cat-2.png'
@@ -142,7 +143,8 @@ export default function CardGrid() {
 
   return(
     <main>
-      <div className="cards" >
+      <Info />
+      <div className="cards-grid" >
         {cards.map(card => {
           return  <Card key={card.id} image={card.image} desc={card.desc} />
         })}
