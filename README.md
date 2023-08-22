@@ -1,6 +1,11 @@
 # Memory Card Game
 ## Introduction 
 
+This project is a browser memory game built with React and themed around my black & white cat  Charlie.
+The goal of the game is to never click the same card twice. 
+
+The project primarily demonstrates use of useState and useEffect hooks to create a React app using only functional components.
+
 ## Preview
 
 [![Memory Card Game](./src/assets/demo1.png)](https://memory-card-game-yuliana-r.netlify.app/)
