@@ -160,7 +160,7 @@ export default function CardGrid(props) {
   }
 
   return(
-    <div className="cards-grid" >
+    <div className="cards-grid flex-center" >
       {cards.map(card => {
         return  <Card 
           key={card.id} 

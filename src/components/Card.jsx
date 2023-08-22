@@ -20,7 +20,6 @@ export default function Card(props) {
     }
   }, [props.gameOver]);
 
-
   return(
     <button className='card-btn'>
       <img src={props.image} alt={props.desc} className='card' onClick={handleClick} />

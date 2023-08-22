@@ -41,7 +41,7 @@ export default function App() {
 
   return(<>
     <Header />
-    <main>
+    <main className='flex-center'>
       <Info 
         score={score} 
         bestScore={bestScore}/>

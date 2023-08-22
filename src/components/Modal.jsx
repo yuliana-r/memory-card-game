@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
 export default function Modal(props) {
-
   function handleDialogClose() {
     if (props.handleCloseModal) {
       props.handleCloseModal();
     }
   }
+
   return(
     <>
       {
         props.showModal && (
-          <dialog id="dialog" open={props.showModal}>
-            <div className="outcome-modal">
+          <dialog id="dialog" open={props.showModal} className="flex-center">
+            <div className="outcome-modal flex-center">
               {props.outcome === 'lost' && (
                 <>
                   <h1 className="outcome-header">
@@ -40,7 +40,6 @@ export default function Modal(props) {
               )}
               <button onClick={handleDialogClose} className="play-again-btn">PLAY AGAIN</button>
             </div>
-            
           </dialog>
         )
       }
