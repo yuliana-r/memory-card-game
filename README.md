@@ -9,7 +9,7 @@ The project primarily demonstrates use of useState and useEffect hooks to create
 ## Preview
 
 [![Memory Card Game](./src/assets/demo1.png)](https://memory-card-game-yuliana-r.netlify.app/)
-[![Memory Card Game](./src/assets/demo1.png)](https://memory-card-game-yuliana-r.netlify.app/)
+[![Memory Card Game](./src/assets/demo2.png)](https://memory-card-game-yuliana-r.netlify.app/)
 
 ## Media & assets credits:
 
