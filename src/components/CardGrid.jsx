@@ -1,5 +1,7 @@
-import Card from './Card'
+/* eslint-disable react/prop-types */
+import Card from './Card';
 import Info from './Info';
+import { useState } from 'react';
 
 import BackCat from '../assets/images/charlie-cat-1.png';
 import SideCat from '../assets/images/charlie-cat-2.png'
@@ -25,8 +27,8 @@ import CatOnTailCat from '../assets/images/charlie-cat-21.png'
 import ReverseFishCat from '../assets/images/charlie-cat-22.png'
 import '../styles/index.css';
 
-export default function CardGrid() {
-  const cards = [
+export default function CardGrid(props) {
+  const cardsArray = [
     {
       id: 0,
       image: BackCat,
@@ -139,17 +141,37 @@ export default function CardGrid() {
     }
   ]
 
-  
+  const [cards, setCards] = useState(cardsArray);
+
+  function shuffle(arr) {
+    let currentIndex = arr.length;
+    while (currentIndex !== 0) {
+      let i = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      let t = arr[currentIndex];
+      arr[currentIndex] = arr[i];
+      arr[i] = t;
+    }
+    return arr;
+  }
+
+  function shuffleCards() {
+    setCards(shuffle(cardsArray));
+  }
 
   return(
-    <main>
-      <Info />
-      <div className="cards-grid" >
-        {cards.map(card => {
-          return  <Card key={card.id} image={card.image} desc={card.desc} />
-        })}
-      </div>
-    </main>
-    
+    <div className="cards-grid" >
+      {cards.map(card => {
+        return  <Card 
+          key={card.id} 
+          image={card.image} 
+          desc={card.desc}
+          shuffleCards={shuffleCards}
+          incrementScore={props.incrementScore}
+          gameOver={props.gameOver} 
+          endGame={props.endGame} />
+      })}
+    </div>
   )
 }
