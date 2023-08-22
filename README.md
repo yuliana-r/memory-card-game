@@ -3,7 +3,8 @@
 
 ## Preview
 
-<!-- [![Memory Card Game](./src/assets/demo1.png)](https://memory-card-game-yuliana-r.netlify.app/) -->
+[![Memory Card Game](./src/assets/demo1.png)](https://memory-card-game-yuliana-r.netlify.app/)
+[![Memory Card Game](./src/assets/demo1.png)](https://memory-card-game-yuliana-r.netlify.app/)
 
 ## Media & assets credits:
 
