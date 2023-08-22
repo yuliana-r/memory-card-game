@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import Card from './Card';
-import Info from './Info';
 import { useState } from 'react';
 
 import BackCat from '../assets/images/charlie-cat-1.png';

@@ -14,12 +14,16 @@ export default function App() {
     if (score > bestScore) {
       setBestScore(score);
     }
+    console.log('Aw you lost! Play again?');
     setScore(0);
     setGameOver(true);
   }
 
   function incrementScore() {
     setScore(prevScore => prevScore + 1);
+    if (score == 21) {
+      console.log('You won the game! Play again?');
+    }
     setGameOver(false);
   }
 

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Card(props) {
   const [wasClicked, setWasClicked] = useState(false);
@@ -13,6 +13,12 @@ export default function Card(props) {
     }
     props.shuffleCards();
   }
+
+  useEffect(() => {
+    if (props.gameOver) {
+      setWasClicked(false);
+    }
+  }, [props.gameOver]);
 
 
   return(
