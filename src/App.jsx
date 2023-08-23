@@ -1,7 +1,7 @@
-import CardGrid from './components/CardGrid';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Info from './components/Info';
+import CardGrid from './components/CardGrid';
+import Footer from './components/Footer';
 import Modal from './components/Modal';
 import '../src/styles/index.css';
 import { useState } from 'react';

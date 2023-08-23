@@ -1,7 +1,4 @@
 /* eslint-disable react/prop-types */
-import Card from './Card';
-import { useState } from 'react';
-
 import BackCat from '../assets/images/charlie-cat-1.png';
 import SideCat from '../assets/images/charlie-cat-2.png'
 import RollingCat from '../assets/images/charlie-cat-3.png'
@@ -24,6 +21,9 @@ import YarnCat from '../assets/images/charlie-cat-19.png'
 import DoubleCat from '../assets/images/charlie-cat-20.png'
 import CatOnTailCat from '../assets/images/charlie-cat-21.png'
 import ReverseFishCat from '../assets/images/charlie-cat-22.png'
+
+import Card from './Card';
+import { useState } from 'react';
 import '../styles/index.css';
 
 export default function CardGrid(props) {
